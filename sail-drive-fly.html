@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sail Drive Fly</title>
+  <link rel="stylesheet" href="sail-drive-fly.css">
+</head>
+<body>
+  <div class="container">
+    <p class="title">Sail Drive Fly</p>
+    
+    <button class="howToPlay-button-design" id="howToPlay-button">How to play</button>
+      <div id="myModal" class="modal">
+        <div class="modal-rules">
+          <div class="close_container">
+            <span class="close">&times;</span>
+          </div>
+          <p class="rules-text">The rules of this game are quite simple. You and the computer take turns making moves. After each move, you can either win, lose, or tie. There are only three possible moves you can make: sail, drive, or fly. <span class="main-rules">Flying beats driving because planes are faster than cars. Driving beats sailing because cars are faster than sailboats. Sailing beats flying because the creator of the game loves sailing and believes it's the best thing in the world.</span> You can keep track of your total score below, and there are no limits to the number of moves you can make. Let's play!</p>
+        </div>
+      </div>
+
+    <div class="button-container">
+      <button class="button-for-play" onclick=
+        "playGame('sail');
+        ">
+        <img src="icons/sail-icon.png" class="button-icon">
+      </button>
+
+      <button class="button-for-play" onclick=
+        "playGame('drive');
+        ">
+        <img src="icons/drive-icon.png" class="button-icon">
+      </button>
+
+      <button class="button-for-play" onclick=
+      "playGame('fly');
+      ">
+        <img src="icons/fly-icon.png" class="button-icon">
+      </button>
+
+      <p class="js-result result" id="result-id"></p>
+      <p class="js-moves moves" id="moves-id"></p>
+      <p class="js-score score"></p>
+  
+      <button class="reset-button" onclick = 
+        "resetScore();
+        ">Reset Score
+      </button>
+
+    </div>
+  </div>
+
+  <script src="sail-drive-fly.js"></script>
+</body>
+</html>
