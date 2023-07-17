@@ -171,3 +171,26 @@ p {
   display: flex;
   justify-content: flex-end;
 }
+
+
+@media screen and (max-width: 576px) {
+  .button-for-play {
+    margin: 0 5px 0 0;
+    height: 120px;
+    width: 120px;
+  }
+  .button-icon {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-for-play {
+    margin: 0 5px 0 0;
+    height: 100px;
+    width: 100px;
+  }
+  .button-icon {
+    height: 70px;
+  }
+}
